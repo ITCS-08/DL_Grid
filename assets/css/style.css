@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.template-container {
+  display: grid;
+  background-color: yellow;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 94vh;
+  width: 100%;
+  grid-template-areas: "header header     " "nav main    " "footer footer      ";
+}
+
+.grid-container {
+  display: grid;
+  height: 90vh;
+  border: 1px solid black;
+  justify-items: start;
+}
+
+.grid-item {
+  display: grid;
+  border: 1px solid white;
+  padding: 1%;
+  height: 90vh;
+}
+.grid-item img {
+  width: 60%;
+  height: 60%;
+}
+
+header {
+  grid-area: header;
+  background-color: #004988;
+  height: 40px;
+  color: white;
+}
+
+.comprar {
+  background-color: #004988;
+  height: 40px;
+  width: 60%;
+  color: white;
+}
+
+main {
+  grid-area: main;
+  background-color: red;
+  justify-items: start;
+  height: 90vh;
+  margin: 0% 0% 2% 1%;
+}
+
+.flex {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  gap: 10px;
+}
+
+img {
+  width: 50%;
+  height: 50%;
+}
+
+nav {
+  grid-area: nav;
+  flex-direction: column;
+  background-color: grey;
+  height: 90vh;
+  width: 25%;
+}
+
+.sidebarMenu {
+  display: flex;
+  background-color: #FFF;
+  color: black;
+  height: 100vh;
+  width: 150px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  transition: all 200ms;
+  border: solid 1px rgb(214, 209, 209);
+}
+.sidebarMenu:hover {
+  left: 0px;
+}
+.sidebarMenu i {
+  margin: 8% 0% 2% 100%;
+  left: 100%;
+}
+.sidebarMenu ul {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+}
+.sidebarMenu ul li {
+  display: flex;
+  border: solid 1px rgb(214, 209, 209);
+  background-color: #FFF;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: 5px;
+  width: 350px;
+}
+.sidebarMenu ul li a {
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.productos {
+  display: flex;
+  width: 250px;
+  height: 100px;
+}
+.productos img {
+  margin: 3%;
+  width: 70px;
+  height: 70px;
+}
+
+.nombre {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10% 10% 30% 10%;
+}
+
+.estado {
+  color: #b5b9af;
+  margin: 10% 0 0 -11%;
+}
+
+.nombreProductos {
+  font-family: "Roboto Flex", sans-serif;
+  color: black;
+  font-size: 13px;
+  margin: 40% 0% 0% 0%;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: auto;
+  gap: 20px;
+}
+
+.pictures img {
+  width: 380px;
+  height: 200px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  margin: 0px 0px 0px 0px;
+}/*# sourceMappingURL=style.css.map */
