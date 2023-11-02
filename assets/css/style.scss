@@ -4,169 +4,109 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
 
-.template-container{
+.template-container {
 
-    display:grid;
-    background-color: yellow;
-    grid-template-columns:  1fr 1fr ;
-    grid-template-rows: 1fr ;
+    display: grid;
+    background-color: grey;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     height: 94vh;
     width: 100%;
-    grid-template-areas: 
-    'header header     '
-    'nav main    '
-    'footer footer      '     
+    grid-template-areas:
+        'header header     '
+        'nav main    '
+        'footer footer      '
     ;
 }
 
-.grid-container{
+.grid-container {
 
     display: grid;
     height: 90vh;
-    
+
     border: 1px solid black;
     justify-items: start;
 }
 
-.grid-item{
-
-    display: grid;
-    border: 1px solid white;
+.grid-item {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: col;
+    justify-content: start;
     padding: 1%;
     height: 90vh;
+    margin: 0% 0% 2% 0%;
 
-    img{
+    img {
 
-     width: 60%;
-     height: 60%;
+        width: 60%;
+        height: 60%;
 
     }
 }
 
-header{
+header {
 
     grid-area: header;
     background-color: #004988;
-    height: 40px;   
-    color:white
-    
+    height: 40px;
+    color: white;
+
 
 }
 
 .comprar {
 
-   
+
     background-color: #004988;
-    height: 40px; 
-    width: 60%;  
-    color:white;
+    height: 40px;
+    width: 60%;
+    color: white;
 }
 
-main{
+main {
 
     grid-area: main;
-    background-color: red;
+    background-color: grey;
     justify-items: start;
-    height: 90vh; 
+    height: 90vh;
     margin: 0% 0% 2% 1%;
-    
-    
-   
+
+
 }
 
-.flex{
-   
-    flex-wrap:wrap;
+.flex {
+
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-content: center;
- 
+
     width: auto;
     gap: 10px;
 }
-img{
-    width: 50%;
-    height: 50%;
+
+img {
+    width: 40%;
+    height: 60%;
 }
 
 
-nav{
+nav {
 
     grid-area: nav;
     flex-direction: column;
     background-color: grey;
-    height: 90vh;  
+    height: 90vh;
     width: 25%;
-
+    border: solid 1px #b5b9af
 }
-
-.sidebarMenu {
-
-    display: flex;
-    background-color: #FFF;
-    color: black;
-    height: 100vh; //viewport height instead of %
-    width: 150px;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    transition: all 200ms;
-    border: solid 1px rgb(214, 209, 209);
-
-    &:hover {
-        left: 0px;
-    }
-
-    i {
-        margin: 8% 0% 2% 100%;
-        left: 100%;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        background-color: #FFF;
-
-
-        li {
-            display: flex;
-            border: solid 1px rgb(214, 209, 209);
-            background-color: #FFF;
-            padding: 10px;
-            flex-direction: row;
-            justify-content: start;
-            margin-bottom: 5px;
-            width: 350px;
-
-            a {
-                color: black;
-
-                text: {
-                    decoration: none;
-                    transform: capitalize;
-
-                }
-
-                font: {
-                    family: Arial, sans-serif;
-                    size: 20px;
-                    weight: bolder;
-                }
-            }
-        }
-    }
-
-
-
-}
-
-
 
 
 .productos {
-    display: flex;   
+    display: flex;
     width: 250px;
     height: 100px;
 
@@ -187,40 +127,14 @@ nav{
     margin: 10% 10% 30% 10%;
 }
 
-.estado {
-    color: #b5b9af;
-    margin: 10% 0 0 -11%;
-}
-
 
 .nombreProductos {
     font-family: 'Roboto Flex', sans-serif;
     color: black;
     font-size: 13px;
     margin: 40% 0% 0% 0%;
-   
-}
-
-.pictures {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: auto;
-    gap: 20px;
 
 }
-
-.pictures img {
-
-    width: 380px;
-    height: 200px;
-}
-
-
-
-
 
 
 .footer {
@@ -229,5 +143,6 @@ nav{
     background-color: white;
     color: black;
     font-weight: bold;
-    margin: 0px 0px 0px 0px;
+    margin: -20px 0px 0px 0px;
+
 }
